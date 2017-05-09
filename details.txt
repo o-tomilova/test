@@ -1,0 +1,9 @@
+Colors
+main-bg: #fff;
+main-blue: #0474bc;
+(with gradient ends up with #32b3ed)
+grey-bg: #dedede;
+grey-text: #787878;
+black: #1a1a1a;
+
+

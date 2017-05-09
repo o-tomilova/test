@@ -1,0 +1,123 @@
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  main {
+    padding-right: 2%;
+    padding-left: 2%;
+  }
+
+  main .main-section .wrap-box .box {
+    width: 210px;
+    min-height: 250px;
+    padding: 20px 10px;
+    margin-right: 20px;
+  }
+
+  footer .footer-button {
+    margin-bottom: 10px;
+  }
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .category .wrap-img {
+    max-width: 150px;
+    margin-right: 10px;
+  }
+
+  footer {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  main .main-section .wrap-box .box {
+    width: 250px;
+    min-height: 250px;
+    float: none;
+    margin: 0 auto 20px;
+  }
+
+  body h1 {
+    font-size: 34px;
+  }
+  body h2 {
+    font-size: 18px;
+  }
+  body h3 {
+    font-size: 16px;
+  }
+  body h4 {
+    font-size: 14px;
+  }
+
+  .category .wrap-img {
+    max-width: 110px;
+    margin-right: 10px;
+  }
+
+  footer {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
+  body h1 {
+    font-size: 24px;
+  }
+  body h2 {
+    font-size: 16px;
+  }
+  body h3 {
+    font-size: 14px;
+  }
+  body h4 {
+    font-size: 12px;
+  }
+
+  nav {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .main-section .title {
+    min-width: 40px;
+  }
+
+  .main-section .line {
+    width: 60px;
+    margin: 0 15px;
+  }
+
+  .category .wrap-img {
+    float: none;
+    max-width: 180px;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  footer .footer-section {
+    float: none;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  nav {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+
+  .category .wrap-img {
+    float: none;
+    max-width: 180px;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+/*# sourceMappingURL=media.css.map */

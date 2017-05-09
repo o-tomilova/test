@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Test Tomilova</title>
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<link rel="stylesheet" type="text/css" href="style/media.css">
+</head>
+<body>
+	<nav>
+		<div class="nav-left">
+			<h3 class="logo-text"><a href="#">L<span class="blue-o">o</span>go</a></h3>
+		</div>
+		<div class="nav-right"> 
+			<ul>
+				<li class="underlined"> <a href="#boxes">Boxes</a> </li>
+				<li class="underlined"> <a href="#filter">Filter</a> </li>
+			</ul>
+		</div>
+	</nav>
+
+	<header>
+		<h1>Simple text in the middle of this background</h1>	
+	</header>
+
+	<main>
+		<section class="main-section" id="boxes">
+			<h2><span class="line"></span><span class="title">Boxes</span><span class="line"></span></h2> 
+			<div class="wrap-box">
+				<div class="box">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit totam architecto reprehenderit porro nam dignissimos dolores, dolorem sapiente magnam aperiam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil repellendus ipsum, dignissimos, ullam. </p>
+				</div>
+				<div class="box">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit totam architecto reprehenderit porro nam dignissimos dolores, dolorem sapiente magnam aperiam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+				</div>
+				<div class="box">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit totam architecto reprehenderit porro nam dignissimos dolores, dolorem sapiente magnam aperiam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil repellendus ipsum, dignissimos, ullam molestiae suscipit.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="main-section" id="filter">
+			<h2><span class="line"></span><span class="title">Filter</span><span class="line"></span></h2>
+			
+			<div class="wrap-button">
+				<div class="cat-button" onclick="openTab('cat01')"> Category 01 </div>
+				<div class="cat-button" onclick="openTab('cat02')"> Category 02 </div>
+			</div>
+			<div class="wrap-categories">
+				<div class="category" id="cat01">
+					<div class="wrap-img"><img src="images/img01.png" alt="image"></div>
+					<div class="wrap-img"><img src="images/img02.png" alt="image"></div>
+					<div class="wrap-img"><img src="images/img03.png" alt="image"></div>
+					<div class="wrap-img"><img src="images/img04.png" alt="image"></div>
+				</div>
+
+				<div class="category" id="cat02">
+					<div class="wrap-img"><img src="images/img01.png" alt="image"></div>
+					<div class="wrap-img"><img src="images/img02.png" alt="image"></div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<div class="footer-section">
+			<div class="wrap-logo">
+				<h3 class="logo-text">L<span class="blue-o">o</span>go</h3>
+			</div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt accusamus commodi, labore reiciendis odit dolore. Quibusdam illo, quidem enim fuga.</p>
+		</div>	
+		<div class="footer-section">
+			<h4>Odkazy</h4>
+			<div class="two-color-border">
+				<div class="blue-line"></div>
+				<div class="white-line"></div>
+			</div>
+			<div class="wrap-button">
+				<a href="#" class="footer-button">Odkaz</a>
+				<a href="#" class="footer-button">Odkaz</a>
+			</div>
+		</div>
+		<div class="footer-section">
+			<h4>Odkazy</h4>
+			<div class="two-color-border">
+				<div class="blue-line"></div>
+				<div class="white-line"></div>
+			</div>
+			<ul class="footer-list">
+				<li><a href="#">Odkaz 01</a></li>
+				<li><a href="#">Odkaz 01</a></li>
+				<li><a href="#">Odkaz 01</a></li>
+				<li><a href="#">Odkaz 01</a></li>
+			</ul>
+		</div>
+	</footer>
+
+	<script type="text/javascript">
+
+		function openTab(catName){
+			var i;
+			var tabs = document.getElementsByClassName("category");
+			for (var i = 0; i < tabs.length; i++) {
+				tabs[i].style.display = "none";
+			}
+
+			document.getElementById(catName).style.display = "inline-block";
+		};
+	</script>
+	
+</body>
+</html>
